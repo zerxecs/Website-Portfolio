@@ -1,0 +1,595 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>vCard - Personal Portfolio</title>
+
+      <!--
+        - favicon
+      -->
+      <link rel="shortcut icon" href="../assets/images/logo.ico" type="image/x-icon">
+
+      <!--
+        - custom css link
+      -->
+      <link rel="stylesheet" href="../assets/css/style.css">
+
+      <!--
+        - google font link
+      -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+      <!--
+        - #MAIN
+      -->
+
+      <main>
+
+        <!--
+          - #SIDEBAR
+        -->
+
+        <aside class="sidebar" data-sidebar>
+
+          <div class="sidebar-info">
+
+            <figure class="avatar-box">
+              <img src="../assets/images/my-avatar.png" alt="Daniel Rojas photo" width="80">
+            </figure>
+
+            <div class="info-content">
+              <h1 class="name" title="Daniel Rojas">Daniel Rojas</h1>
+
+              <p class="title">Aspiring Software Engineer</p>
+            </div>
+
+            <button class="info_more-btn" data-sidebar-btn>
+              <span>Show Contacts</span>
+
+              <ion-icon name="chevron-down"></ion-icon>
+            </button>
+
+          </div>
+
+          <div class="sidebar-info_more">
+
+            <div class="separator"></div>
+
+            <ul class="contacts-list">
+
+              <li class="contact-item">
+
+                <div class="icon-box">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </div>
+
+                <div class="contact-info">
+                  <p class="contact-title">Email</p>
+
+                  <a href="mailto:rojasdanielgrabillo2003@gmail.com" class="contact-link">rojasdanielgrabillo2003@gmail.com</a>
+                </div>
+
+              </li>
+
+              <li class="contact-item">
+
+                <div class="icon-box">
+                  <ion-icon name="phone-portrait-outline"></ion-icon>
+                </div>
+
+                <div class="contact-info">
+                  <p class="contact-title">Phone</p>
+
+                  <a href="tel: 639217163025" class="contact-link">+63 9217163025</a>
+                </div>
+
+              </li>
+
+              <li class="contact-item">
+
+                <div class="icon-box">
+                  <ion-icon name="calendar-outline"></ion-icon>
+                </div>
+
+                <div class="contact-info">
+                  <p class="contact-title">Birthday</p>
+
+                  <time datetime="2003-07-29">July 29, 2003</time>
+                </div>
+
+              </li>
+
+              <li class="contact-item">
+
+                <div class="icon-box">
+                  <ion-icon name="location-outline"></ion-icon>
+                </div>
+
+                <div class="contact-info">
+                  <p class="contact-title">Location</p>
+
+                  <address>Calamba City, Laguna, Philippines</address>
+                </div>
+
+              </li>
+
+            </ul>
+
+            <div class="separator"></div>
+
+            <ul class="social-list">
+
+              <li class="social-item">
+                <a href="https://www.facebook.com/luffy.taro.161/" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li class="social-item">
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+              </li>
+
+              <li class="social-item">
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </aside>
+
+
+        <!--
+          - #main-content
+        -->
+
+        <div class="main-content">
+
+          <!--
+            - #NAVBAR
+          -->
+
+            
+
+
+
+
+          <!--
+            - #ABOUT
+          -->
+    <article class="about active" data-page="about">
+
+      <header>
+        <h2 class="h2 article-title">Apartment Rental Management System</h2>
+      </header>
+
+      <section class="about-text">
+
+        <figure class="project-img">
+          <div class="project-item-icon-box">
+            <ion-icon name="eye-outline"></ion-icon>
+          </div>
+
+          <img src="../assets/images/mdrf.svg"
+              alt="Apartment Rental Management System"
+              loading="lazy">
+        </figure>
+
+        <p>
+          This project is a web-based Apartment Rental Management System designed to
+          digitalize the rental process between administrators, property owners, and
+          tenants. The system allows property owners to manage apartments and rooms,
+          while prospective tenants can browse available properties and submit rental
+          applications online.
+        </p>
+
+        <p>
+          The backend was developed using the Laravel framework, following the
+          Model-View-Controller (MVC) architectural pattern to separate business
+          logic, data management, and application interfaces. Laravel routing and
+          dynamic route parameters were implemented to handle resource-specific
+          pages and operations using unique identifiers. The system also utilizes
+          relational database relationships to connect users, apartments, rooms,
+          tenants, payments, maintenance requests, and staff.
+        </p>
+
+        <p>
+          A major feature of the system is its role-based access control, providing
+          different functionalities for Administrators, Property Owners, and Tenants.
+          Administrators manage user accounts and application approvals, property
+          owners manage their properties and tenants, while tenants can apply for
+          rooms, submit maintenance requests, access support services, and monitor
+          their rental payments. The project provided practical experience in Laravel
+          development, MVC architecture, CRUD operations, authentication workflows,
+          database relationships, and role-based system design.
+        </p>
+
+
+        <!-- Project View -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Project View</h3>
+
+          <ul class="service-list portfolio-service-list">
+
+
+            <!-- Role-Based Dashboard -->
+            <li class="service-item">
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">
+                  Role-Based Management System
+                </h4>
+
+                <p class="service-item-text">
+                  The system provides dedicated dashboards and functionality based
+                  on user roles. Administrators manage account approvals and users,
+                  property owners manage apartments, rooms, tenants, and staff,
+                  while tenants can manage applications, maintenance requests, and
+                  rental payments.
+                </p>
+
+                <p class="service-item-text">
+                Admin Dashboard
+                </p>
+                  <figure class="project-img preview">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="../assets/images/mdrfadmin.svg"
+                      alt="Role-Based Dashboard"
+                      loading="lazy">
+                </figure>
+    
+                <p class="service-item-text">
+                Landowner Dashboard
+                </p>
+                  <figure class="project-img preview">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="../assets/images/mdrfowner.svg"
+                      alt="Role-Based Dashboard"
+                      loading="lazy">
+                </figure>
+
+                <p class="service-item-text">
+                Tenant Application & Dashboard
+                </p>
+                <figure class="project-img preview">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="../assets/images/tenant.png"
+                      alt="Role-Based Dashboard"
+                      loading="lazy">
+                </figure>
+              </div>
+
+            </li>
+
+
+            <!-- Laravel MVC -->
+            <li class="service-item">
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">
+                  Laravel MVC Architecture
+                </h4>
+
+                <p class="service-item-text">
+                  Developed the backend using Laravel and its MVC architecture.
+                  Models handle database relationships, Controllers manage business
+                  logic and application workflows, while Laravel routes connect
+                  HTTP requests to dynamic resource-specific pages and operations.
+                </p>
+
+                <figure class="project-img preview">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="../assets/images/mvcarchi.svg"
+                      alt="Laravel MVC Architecture"
+                      loading="lazy">
+                </figure>
+              </div>
+
+            </li>
+
+
+            <!-- Database -->
+            <li class="service-item">
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">
+                  Relational Database Design
+                </h4>
+
+                <p class="service-item-text">
+                  Designed a relational database structure connecting users,
+                  landowner applications, apartments, rooms, tenants, payments,
+                  maintenance requests, room images, and staff. Foreign key
+                  relationships were implemented to maintain data consistency
+                  across the rental management workflow.
+                </p>
+
+                <figure class="project-img preview">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="../assets/images/erd.png"
+                      alt="Apartment Rental System ERD"
+                      loading="lazy">
+                </figure>
+              </div>
+
+            </li>
+
+
+            <!-- Application Workflow -->
+            <li class="service-item">
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">
+                  Rental Application Workflow
+                </h4>
+
+                <p class="service-item-text">
+                  Implemented a multi-stage application and approval workflow where
+                  landowners must first be approved by administrators before managing
+                  properties. Tenant applications are processed through administrator
+                  and property owner approval before an account becomes an active
+                  tenancy.
+                </p>
+
+                <figure class="project-img preview">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="../assets/images/mdrfflow.svg"
+                      alt="Rental Application Workflow"
+                      loading="lazy">
+                </figure>
+              </div>
+
+            </li>
+
+
+          </ul>
+
+        </section>
+
+      </section>
+<!-- Project Actions -->
+<section class="project-actions">
+
+  <div class="project-actions-content">
+    <span class="project-actions-label">Explore the Project</span>
+    <h3 class="h3 project-actions-title">Interested in the implementation?</h3>
+    <p>
+      Explore the source code and technical implementation, or return to the
+      main portfolio to discover more projects.
+    </p>
+  </div>
+
+  <div class="project-actions-buttons">
+
+    <a 
+      href="https://github.com/zerxecs/MDRF"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="project-action-btn github-btn"
+    >
+      <ion-icon name="logo-github"></ion-icon>
+      <span>View Source Code</span>
+      <ion-icon class="action-arrow" name="arrow-up-outline"></ion-icon>
+    </a>
+
+    <a 
+      href="index.html"
+      class="project-action-btn home-btn"
+    >
+      <ion-icon name="arrow-back-outline"></ion-icon>
+      <span>Back to Portfolio</span>
+    </a>
+
+  </div>
+
+</section>
+
+      <!--
+  - Other Projects
+-->
+
+<section class="other-projects">
+
+  <div class="other-projects-header">
+    <span class="section-subtitle">PORTFOLIO</span>
+    <h3 class="h3 other-projects-title">Other Projects</h3>
+  </div>
+
+  <ul class="other-projects-list has-scrollbar">
+
+ 
+     <!-- Project 1 -->
+    <li class="other-project-item">
+      <a href="ML.html" class="other-project-card">
+
+        <figure class="other-project-img">
+          <div class="other-project-icon-box">
+            <ion-icon name="eye-outline"></ion-icon>
+          </div>
+
+          <img
+            src="../assets/images/features.png"
+            alt="CNN-LSTM Automatic Guitar Chord Recognition"
+            loading="lazy">
+        </figure>
+
+        <div class="other-project-content">
+
+          <h4 class="h4 other-project-title">
+            Automatic Guitar Chord Recognition
+          </h4>
+
+          <p class="other-project-category">
+            Machine Learning
+          </p>
+
+        </div>
+
+      </a>
+    </li>
+
+
+    <!-- Project 2 -->
+    <li class="other-project-item">
+      <a href="classiz.html" class="other-project-card">
+
+        <figure class="other-project-img">
+          <div class="other-project-icon-box">
+            <ion-icon name="eye-outline"></ion-icon>
+          </div>
+
+          <img
+            src="../assets/images/classizhome.png"
+            alt="Educational Quiz Platform"
+            loading="lazy">
+        </figure>
+
+        <div class="other-project-content">
+
+          <h4 class="h4 other-project-title">
+            Rental Management System
+          </h4>
+
+          <p class="other-project-category">
+            Web Development
+          </p>
+
+        </div>
+
+      </a>
+    </li>
+
+
+    <!-- Project 3 -->
+    <li class="other-project-item">
+      <a href="Engkanto Siklaban Para sa Dugo ni Bathala.html" class="other-project-card">
+
+        <figure class="other-project-img">
+          <div class="other-project-icon-box">
+            <ion-icon name="eye-outline"></ion-icon>
+          </div>
+
+          <img
+            src="../assets/images/enghome.png"
+            alt="Fighting Game Representing Filipino Folklore"
+            loading="lazy">
+        </figure>
+
+        <div class="other-project-content">
+
+          <h4 class="h4 other-project-title">
+           Fighting Game Represent Filipino Folklore 
+          </h4>
+
+          <p class="other-project-category">
+            Game Development
+          </p>
+
+        </div>
+
+      </a>
+    </li>
+
+  </ul>
+
+</section>
+        
+        
+            <!--
+              - testimonials modal
+        -->
+          
+            <div class="modal-container" data-modal-container>
+
+              <div class="overlay" data-overlay></div>
+
+              
+              <section class="testimonials-modal">
+
+                <button class="modal-close-btn" data-modal-close-btn>
+                  <ion-icon name="close-outline"></ion-icon>
+                </button>
+
+                <div class="modal-img-wrapper">
+                  <figure class="modal-avatar-box">
+                    <img src="../assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+                  </figure>
+
+                <!--Apostrophe   <img src="./assets/images/icon-quote.svg" alt="quote icon"> -->
+                </div>
+          
+                <div class="modal-content">
+
+                  <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                  <time datetime="2021-06-14">14 June, 2021</time>
+
+                  <div data-modal-text>
+                    <p>
+                      
+                    </p>
+                  </div>
+                
+                </div>
+
+              </section>
+
+            </div>
+
+          
+
+    
+
+        </main>
+
+
+
+
+
+      <!--
+        - custom js link
+      -->
+      <script src="../assets/js/script.js"></script>
+
+      <!--
+        - ionicon link
+      -->
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    </body>
+
+    </html>

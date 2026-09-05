@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Daniel Rojas photo" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Daniel Rojas">Daniel Rojas</h1>
+
+          <p class="title">Aspiring Software Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:rojasdanielgrabillo2003@
+              " class="contact-link">rojasdanielgrabillo2003@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel: 639217163025" class="contact-link">+63 9217163025</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2003-07-29">July 29, 2003</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Calamba City, Laguna, Philippines</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.facebook.com/luffy.taro.161/" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+        
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p> 
+           Hi! I'm Daniel Rojas, a fresh graduate from <b><strong> National University - Laguna </strong></b> with a degree in Bachelor of Science in Computer Science. 
+           I have graduated with a GPA of 3.59 achieving a distinction award of <b><strong> Magna Cum Laude</strong>. This achievement is a testiment to my dedication and 
+           hardwork throughout my academic journey. Now, I am eager to apply my knowledege, skills, and passion for technology in a proffesional setting.
+  
+          </p>
+
+          <p>
+            As for my experience, I have work on several projects during my acedmic year such as a <b><strong>Web-based Quiz Application</strong></b> 
+            and a <b><strong>Web-based Rental Apartment System</strong></b> where I used laravel for framework, react js & javascript for frontend, and mysql/mongoDB for database.
+            In addition I am the Thesis leader for a project that involves developing a <b><strong>Machine Learning model & Algorithm </strong></b>that would help in 
+            identifying guitar chords from a given audio input. To accomplish this, I have utilized Python and its libraries such as Tensorflow, Keras, and Librosa. 
+            Furthermore to collect the needed data for the model, I have annotated more than 200,000 audio samples which showcase my strong work ethic and commitment to achieving high-quality results.
+
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/webdev.svg
+                " alt="web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web developer</h4>
+
+                <p class="service-item-text">
+                  Full stack development of a website.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/gamedev.svg" alt="game development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Game development</h4>
+
+                <p class="service-item-text">
+                  Develop engaging games using Unity, Unreal Engine 5 & even Tiktok house effect for interactive mini games in Tiktok.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/machinelearning.svg" alt="Machine Learning icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Machine Learning</h4>
+
+                <p class="service-item-text">
+                  Perform data analysis and build machine learning models using Python and its libraries such as Tensorflow, Keras, and Librosa.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/analyst.svg" alt="Analyst icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Analyst</h4>
+
+                <p class="service-item-text">
+                  I collect and analyze data which could be essential for making informed decisions and training machine learning models.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+    
+
+        <section class="testimonials">
+<--
+  - Certificates
+-->
+ 
+<section class="other-projects">
+
+  <div class="other-projects-header">
+    <span class="section-subtitle">ACHIEVEMENTS</span>
+    <h3 class="h3 other-projects-title">Certificates</h3>
+  </div>
+
+  <ul class="other-projects-list has-scrollbar">
+
+
+    <!-- Certificate 1 -->
+  <li class="other-project-item">
+  <a href="#" class="other-project-card certificate-card" data-certificate="cert1">
+
+    <figure class="other-project-img">
+      <div class="other-project-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+
+      <img
+        src="./assets/images/magna.jpg"
+        alt="Certificate 1"
+        loading="lazy">
+    </figure>
+
+    <div class="other-project-content">
+
+      <h4 class="h4 other-project-title">
+        Magna Cum Laude
+      </h4>
+
+      <p class="other-project-category">
+        National University - Laguna
+      </p>
+
+    </div>
+
+  </a>
+</li>
+
+
+    <!-- Certificate 2 -->
+    <li class="other-project-item">
+
+      <button
+        class="other-project-card certificate-card"
+        data-certificate="cert2"
+      >
+
+        <figure class="other-project-img">
+
+          <div class="other-project-icon-box">
+            <ion-icon name="eye-outline"></ion-icon>
+          </div>
+
+          <img
+            src="./assets/images/operation.jpg"
+            alt="Council of leader"
+            loading="lazy">
+
+        </figure>
+
+        <div class="other-project-content">
+
+          <h4 class="h4 other-project-title">
+            Recognition for being part of Operation Department 
+          </h4>
+
+          <p class="other-project-category">
+            Council of Leaders NU-Laguna
+          </p>
+
+        </div>
+
+      </button>
+
+    </li>
+
+
+    <!-- Certificate 3 -->
+    <li class="other-project-item">
+
+      <button
+        class="other-project-card certificate-card"
+        data-certificate="cert3"
+      >
+
+        <figure class="other-project-img">
+
+          <div class="other-project-icon-box">
+            <ion-icon name="eye-outline"></ion-icon>
+          </div>
+
+          <img
+            src="./assets/images/hackathon.jpg"
+            alt="Certificate 3"
+            loading="lazy">
+
+        </figure>
+
+        <div class="other-project-content">
+
+          <h4 class="h4 other-project-title">
+            2nd Place Winner of CSS Day Hackathon
+          </h4>
+
+          <p class="other-project-category">
+           National University - Laguna
+          </p>
+
+        </div>
+
+      </button>
+
+    </li>
+
+    <!-- Certificate 4 -->
+    <li class="other-project-item">
+
+      <button
+        class="other-project-card certificate-card"
+        data-certificate="cert4"
+      >
+
+        <figure class="other-project-img">
+
+          <div class="other-project-icon-box">
+            <ion-icon name="eye-outline"></ion-icon>
+          </div>
+
+          <img
+            src="./assets/images/toeic.jpg"
+            alt="Certificate 4"
+            loading="lazy">
+
+        </figure>
+
+        <div class="other-project-content">
+
+          <h4 class="h4 other-project-title">
+            TOEIC Certificate
+          </h4>
+
+          <p class="other-project-category">
+           International Testing Service
+          </p>
+
+        </div>
+
+      </button>
+
+    </li>
+
+    
+    <!-- Certificate 5 -->
+    <li class="other-project-item">
+
+      <button
+        class="other-project-card certificate-card"
+        data-certificate="cert5"
+      >
+
+        <figure class="other-project-img">
+
+          <div class="other-project-icon-box">
+            <ion-icon name="eye-outline"></ion-icon>
+          </div>
+
+          <img
+            src="./assets/images/Intro.png"
+            alt="Certificate 5"
+            loading="lazy">
+
+        </figure>
+
+        <div class="other-project-content">
+
+          <h4 class="h4 other-project-title">
+            Introduction to Cybersecurity Certificate
+          </h4>
+
+          <p class="other-project-category">
+            Cisco Networking Academy
+          </p>
+
+        </div>
+
+      </button>
+
+    </li>
+
+        <!-- Certificate 6 -->
+    <li class="other-project-item">
+
+      <button
+        class="other-project-card certificate-card"
+        data-certificate="cert6"
+      >
+
+        <figure class="other-project-img">
+
+          <div class="other-project-icon-box">
+            <ion-icon name="eye-outline"></ion-icon>
+          </div>
+
+          <img
+            src="./assets/images/OJT.jpg"
+            alt="Certificate 5"
+            loading="lazy">
+
+        </figure>
+
+        <div class="other-project-content">
+
+          <h4 class="h4 other-project-title">
+            On-the-Job Training Certificate of Recognition
+          </h4>
+
+          <p class="other-project-category">
+            P.C.M cosmetic Products Trading
+          </p>
+
+        </div>
+
+      </button>
+
+    </li>
+
+
+  </ul>
+
+</section>
+
+
+<!--
+  - Certificate Modal
+-->
+
+<div class="certificate-modal" id="certificateModal">
+
+  <div class="certificate-modal-overlay"></div>
+
+  <div class="certificate-modal-content">
+
+    <button class="certificate-modal-close" id="certificateModalClose">
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <figure class="certificate-modal-image">
+      <img
+        id="certificateModalImage"
+        src=""
+        alt="Certificate">
+    </figure>
+
+    <div class="certificate-modal-info">
+
+      <h3 id="certificateModalTitle">
+        Certificate Name
+      </h3>
+
+      <p class="certificate-issuer" id="certificateModalIssuer">
+        Issuing Organization
+      </p>
+
+      <p id="certificateModalDescription">
+        Certificate description goes here.
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+
+        </section>
+ 
+     
+        <!--
+          - testimonials modal
+      -->
+      
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+       
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+<!--
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+            -->
+            </div>
+
+          </section>
+
+        </div>
+
+      
+      
+   
+        
+      <!--
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+        
+        </section>
+      -->
+        
+
+      </article>
+
+  
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">National University - Laguna</h4>
+
+              <span>2022 — 2026</span>
+
+              <p class="timeline-text">
+                Bachelor of Science in Computer Science
+                <br>Magna Cum Laude
+                <br>University Academic Excellence Benifit Scholar (2023-2025)
+                <br>Council of Leaders member (2024)</br>   
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">STI College Calamba</h4>
+
+              <span>2020 — 2022</span>
+
+              <p class="timeline-text">
+                Senior High School
+                Strand: Information Technology Mobile App & Web Development
+                With Honors (Top of the class in ICT strand)
+
+              </p>  
+
+            </li>
+
+            <!--
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">High school of art and design</h4>
+
+              <span>2002 — 2004</span>
+
+              <p class="timeline-text">
+                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
+                magni dolores
+                eos.
+              </p>
+
+            </li>
+-->
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Backend Developer Intern</h4>
+
+              <span>2026</span>
+
+              <p class="timeline-text">
+                PCM Cosmetic Products Trading 
+               <br> Responsible for developing and maintaining the database management for the company's Quotation System.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Game Developer (Mini game using Tiktok House Effect)</h4>
+
+              <span>2026</span>
+
+              <p class="timeline-text">
+                PCM Cosmetic Products Trading 
+                <br>Developed a mini game using the Tiktok House Effect by programming it in Typescript Language. It was use for promotional purposes to attract customers accross the social media platform Tiktok.
+
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Machine Learning Engineer (Thesis Leader)</h4>
+
+              <span>2026</span>
+
+              <p class="timeline-text">
+               National University - Laguna
+              <br> Developed a machine learning model and algorithm (CNN-LSTM) that can identify guitar chords from a given audio input. The model was trained using Python and its libraries such as Tensorflow, Keras, and Librosa. Additionally, I annotated more than 200,000 audio samples to collect the necessary data for the model.
+              
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Backend developer</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Game developer</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Machine Learning Engineer</h5>
+                <data value="90">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web Development</h5>
+                <data value="50">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Game Development</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Machine Learning</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Game Development</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Machine Learning</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="portfolio/classiz.html">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/classizhome.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Classiz</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="portfolio/MDRF.html">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/MDRF.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MDRF</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+
+            <li class="project-item  active" data-filter-item data-category="game development">
+              <a href="portfolio/Engkanto Siklaban Para sa Dugo ni Bathala.html">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/enghome.png" alt="engkanto" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Engkanto Siklaban Para sa Dugo ni Bathala</h3>
+
+                <p class="project-category">Game Development</p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+            <a href="ML.html">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/modelarc.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Automatic Guitar Chord Recognition</h3>
+
+                <p class="project-category">Machine Learning</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+
+
+
+
+
+<!--
+  - #CONTACT
+-->
+
+<article class="contact" data-page="contact">
+
+  <header>
+    <h2 class="h2 article-title">Contact</h2>
+  </header>
+
+
+  <!-- Contact Introduction -->
+
+  <section class="contact-intro">
+
+    <span class="contact-label">Let's Connect</span>
+
+    <h3 class="h3 contact-heading">
+      Have a project or opportunity in mind?
+    </h3>
+
+    <p>
+      Whether you have a project, job opportunity, or simply want to connect,
+      feel free to reach out through any of the platforms below.
+    </p>
+
+  </section>
+
+
+  <!-- Contact Layout -->
+
+  <section class="contact-grid">
+
+
+    <!-- Map -->
+
+    <div class="contact-map">
+
+      <div class="contact-section-heading">
+
+        <span class="contact-label">Location</span>
+
+        <h3 class="h3">
+          Where I'm Based
+        </h3>
+
+      </div>
+
+      <div class="mapbox" data-mapbox>
+
+        <figure>
+
+          <iframe
+            src="https://www.google.com/maps?q=14.147770,121.135240&output=embed"
+            loading="lazy"
+            title="Location map">
+          </iframe>
+
+        </figure>
+
+      </div>
+
+    </div>
+
+
+    <!-- Contact Information -->
+
+    <div class="contact-information">
+
+      <div class="contact-section-heading">
+
+        <span class="contact-label">Get In Touch</span>
+
+        <h3 class="h3">
+          Contact Me
+        </h3>
+
+      </div>
+
+
+      <ul class="contact-list">
+
+
+        <!-- Email -->
+
+        <li class="contact-card">
+
+          <a
+            href="mailto:rojasdanielgrabillo2003@gmail.com"
+            class="contact-card-link"
+          >
+
+            <div class="contact-icon-box">
+
+              <img
+                src="./assets/images/email.svg"
+                alt="Email"
+                width="35"
+              >
+
+            </div>
+
+            <div class="contact-content">
+
+              <span class="contact-card-label">
+                Email
+              </span>
+
+              <h4 class="h4">
+                rojasdanielgrabillo2003@gmail.com
+              </h4>
+
+              <p>
+                Send me an email
+              </p>
+
+            </div>
+
+            <ion-icon
+              name="arrow-forward-outline"
+              class="contact-arrow">
+            </ion-icon>
+
+          </a>
+
+        </li>
+
+
+        <!-- Messenger -->
+
+        <li class="contact-card">
+
+          <a
+            href="https://m.me/luffy.taro.161"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card-link"
+          >
+
+            <div class="contact-icon-box">
+
+              <img
+                src="./assets/images/messenger.svg"
+                alt="Messenger"
+                width="35"
+              >
+
+            </div>
+
+            <div class="contact-content">
+
+              <span class="contact-card-label">
+                Messenger
+              </span>
+
+              <h4 class="h4">
+                Facebook Messenger
+              </h4>
+
+              <p>
+                Message me directly
+              </p>
+
+            </div>
+
+            <ion-icon
+              name="arrow-forward-outline"
+              class="contact-arrow">
+            </ion-icon>
+
+          </a>
+
+        </li>
+
+
+        <!-- Phone -->
+
+        <li class="contact-card">
+
+          <a
+            href="tel:+639217163025"
+            class="contact-card-link"
+          >
+
+            <div class="contact-icon-box">
+
+              <img
+                src="./assets/images/phone.svg"
+                alt="Phone"
+                width="35"
+              >
+
+            </div>
+
+            <div class="contact-content">
+
+              <span class="contact-card-label">
+                Phone
+              </span>
+
+              <h4 class="h4">
+                +63 921 716 3025
+              </h4>
+
+              <p>
+                Give me a call
+              </p>
+
+            </div>
+
+            <ion-icon
+              name="arrow-forward-outline"
+              class="contact-arrow">
+            </ion-icon>
+
+          </a>
+
+        </li>
+
+
+        <!-- LinkedIn -->
+
+        <li class="contact-card">
+
+          <a
+            href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card-link"
+          >
+
+            <div class="contact-icon-box">
+
+              <img
+                src="./assets/images/linkin.svg"
+                alt="LinkedIn"
+                width="35"
+              >
+
+            </div>
+
+            <div class="contact-content">
+
+              <span class="contact-card-label">
+                LinkedIn
+              </span>
+
+              <h4 class="h4">
+                LinkedIn Profile
+              </h4>
+
+              <p>
+                Connect with me professionally
+              </p>
+
+            </div>
+
+            <ion-icon
+              name="arrow-forward-outline"
+              class="contact-arrow">
+            </ion-icon>
+
+          </a>
+
+        </li>
+
+
+        <!-- GitHub -->
+
+        <li class="contact-card">
+
+          <a
+            href="https://github.com/rojasdanielgrabillo"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card-link"
+          >
+
+            <div class="contact-icon-box">
+
+              <img
+                src="./assets/images/github.svg"
+                alt="GitHub"
+                width="35"
+              >
+
+            </div>
+
+            <div class="contact-content">
+
+              <span class="contact-card-label">
+                GitHub
+              </span>
+
+              <h4 class="h4">
+                rojasdanielgrabillo
+              </h4>
+
+              <p>
+                Explore my projects and source code
+              </p>
+
+            </div>
+
+            <ion-icon
+              name="arrow-forward-outline"
+              class="contact-arrow">
+            </ion-icon>
+
+          </a>
+
+        </li>
+
+      </ul>
+
+    </div>
+
+  </section>
+
+</article>
+
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

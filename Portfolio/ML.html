@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Daniel Rojas photo" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Daniel Rojas">Daniel Rojas</h1>
+
+          <p class="title">Aspiring Software Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:rojasdanielgrabillo2003@gmail.com" class="contact-link">rojasdanielgrabillo2003@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel: 639217163025" class="contact-link">+63 9217163025</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2003-07-29">July 29, 2003</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Calamba City, Laguna, Philippines</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.facebook.com/luffy.taro.161/" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+        
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">A CNN-LSTM Multi-Task Learning Approach for Polyphonic Guitar Chord Recognition</h2>
+        </header>
+
+        <section class="about-text">
+<figure class="project-img video-preview">
+  <video
+    id="thesisVideo"
+    autoplay
+    muted
+    playsinline
+    controls
+    preload="auto"
+  >
+    <source src="./assets/images/demoVid.mp4" type="video/mp4">
+  </video>
+</figure>
+
+   <p>
+  This project is my undergraduate thesis focused on Automatic Guitar Chord
+  Recognition using a deep learning approach. The system was designed to
+  identify guitar chords from polyphonic audio recordings by analyzing their
+  harmonic and temporal characteristics.
+</p>
+
+<p>
+  The proposed model uses a hybrid CNN-LSTM Multi-Task Learning architecture
+  that combines Constant-Q Transform (CQT) and Chroma features. Convolutional
+  Neural Networks were used to extract meaningful frequency patterns from the
+  audio, while Long Short-Term Memory (LSTM) layers were used to learn temporal
+  relationships between consecutive musical frames.
+</p>
+
+<p>
+  Instead of predicting every chord as a single class, the model performs
+  multi-task learning by independently predicting the chord root and chord
+  quality. These predictions are combined to determine the final chord,
+  allowing the system to better learn the musical structure of guitar chords.
+  The final model achieved <strong>82.02% Root Accuracy</strong>,
+  <strong>90.02% Quality Accuracy</strong>, and
+  <strong>78.13% Exact Chord Recognition Accuracy</strong> on the test dataset.
+</p>
+
+<p>
+  This research gave me hands-on experience in machine learning, deep learning,
+  audio signal processing, dataset preprocessing, model evaluation, and GPU-based
+  training. The project was developed using Python and modern machine learning
+  libraries including TensorFlow, Librosa, NumPy, Pandas, and Scikit-learn.
+</p>
+
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Project View</h3>
+
+          <ul class="service-list portfolio-service-list">
+
+            <li class="service-item">
+
+            
+
+              <div class="service-content-box">
+                 <h4 class="h4 service-item-title">
+          CNN-LSTM Multi-Task Architecture
+        </h4>
+
+        <p class="service-item-text">
+          Hybrid deep learning architecture that combines CQT and Chroma
+          audio features using CNN layers for feature extraction and LSTM
+          layers for temporal learning. The model independently predicts
+          the chord root and quality through a multi-task learning approach.
+        </p>
+
+        <figure class="project-img preview">
+
+          <div class="project-item-icon-box">
+            <ion-icon name="eye-outline"></ion-icon>
+          </div>
+
+          <img src="./assets/images/modelarc.png"
+               alt="CNN LSTM Multi Task Learning Architecture"
+               loading="lazy">
+      </figure>
+              </div>
+
+            </li>
+
+ <li class="service-item">
+
+      <div class="service-content-box">
+
+        <h4 class="h4 service-item-title">
+          Audio Feature Extraction
+        </h4>
+
+        <p class="service-item-text">
+          Guitar audio recordings were transformed into CQT and Chroma
+          representations to capture frequency, harmonic, and tonal
+          information before being processed by the deep learning model.
+        </p>
+
+        <figure class="project-img preview">
+
+          <div class="project-item-icon-box">
+            <ion-icon name="eye-outline"></ion-icon>
+          </div>
+
+          <img src="./assets/images/features.png"
+               alt="CQT and Chroma Feature Extraction"
+               loading="lazy">
+
+        </figure>
+
+      </div>
+
+    </li>
+
+
+    <!-- Workflow -->
+    <li class="service-item">
+
+      <div class="service-content-box">
+
+        <h4 class="h4 service-item-title">
+          Recognition Workflow
+        </h4>
+
+        <p class="service-item-text">
+          End-to-end workflow showing how raw guitar audio is processed,
+          transformed into audio features, analyzed by the CNN-LSTM model,
+          and converted into predicted chord labels.
+        </p>
+
+        <figure class="project-img preview">
+
+          <div class="project-item-icon-box">
+            <ion-icon name="eye-outline"></ion-icon>
+          </div>
+
+          <img src="./assets/images/sysarch.png"
+               alt="Automatic Guitar Chord Recognition Workflow"
+               loading="lazy">
+
+        </figure>
+
+      </div>
+
+    </li>
+
+
+    <!-- Results -->
+    <li class="service-item">
+
+      <div class="service-content-box">
+
+        <h4 class="h4 service-item-title">
+          Model Performance
+        </h4>
+
+        <p class="service-item-text">
+          Final evaluation results demonstrating strong performance in
+          predicting chord roots and qualities, achieving 78.13% exact
+          chord recognition accuracy on the test dataset.
+        </p>
+
+        <figure class="project-img preview">
+
+          <div class="project-item-icon-box">
+            <ion-icon name="eye-outline"></ion-icon>
+          </div>
+
+          <img src="./assets/images/finalresult.png"
+               alt="Model Evaluation Results"
+               loading="lazy">
+
+        </figure>
+
+      </div>
+
+    </li>
+          </ul>
+
+        </section>
+
+        <!-- Project Actions -->
+<section class="project-actions">
+
+  <div class="project-actions-content">
+    <span class="project-actions-label">Explore the Project</span>
+    <h3 class="h3 project-actions-title">Interested in the implementation?</h3>
+    <p>
+      Explore the source code and technical implementation, or return to the
+      main portfolio to discover more projects.
+    </p>
+  </div>
+
+  <div class="project-actions-buttons">
+
+    <a 
+      href="https://github.com/zerxecs/Machine-Learning-Project"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="project-action-btn github-btn"
+    >
+      <ion-icon name="logo-github"></ion-icon>
+      <span>View Source Code</span>
+      <ion-icon class="action-arrow" name="arrow-up-outline"></ion-icon>
+    </a>
+
+    <a 
+      href="index.html"
+      class="project-action-btn home-btn"
+    >
+      <ion-icon name="arrow-back-outline"></ion-icon>
+      <span>Back to Portfolio</span>
+    </a>
+
+  </div>
+
+</section>
+
+
+
+      <!--
+  - Other Projects
+-->
+
+<section class="other-projects">
+
+  <div class="other-projects-header">
+    <span class="section-subtitle">PORTFOLIO</span>
+    <h3 class="h3 other-projects-title">Other Projects</h3>
+  </div>
+
+  <ul class="other-projects-list has-scrollbar">
+
+       <!-- Project 1 -->
+    <li class="other-project-item">
+      <a href="MDRF.html" class="other-project-card">
+
+        <figure class="other-project-img">
+          <div class="other-project-icon-box">
+            <ion-icon name="eye-outline"></ion-icon>
+          </div>
+
+          <img
+            src="./assets/images/MDRF.png"
+            alt="Rental Management System ERD"
+            loading="lazy">
+        </figure>
+
+        <div class="other-project-content">
+
+          <h4 class="h4 other-project-title">
+            Rental Management System
+          </h4>
+
+          <p class="other-project-category">
+            Web Development
+          </p>
+
+        </div>
+
+      </a>
+    </li>
+
+
+    <!-- Project 2 -->
+    <li class="other-project-item">
+      <a href="classiz.html" class="other-project-card">
+
+        <figure class="other-project-img">
+          <div class="other-project-icon-box">
+            <ion-icon name="eye-outline"></ion-icon>
+          </div>
+
+          <img
+            src="./assets/images/classizhome.png"
+            alt="Educational Quiz Platform"
+            loading="lazy">
+        </figure>
+
+        <div class="other-project-content">
+
+          <h4 class="h4 other-project-title">
+            Rental Management System
+          </h4>
+
+          <p class="other-project-category">
+            Web Development
+          </p>
+
+        </div>
+
+      </a>
+    </li>
+
+
+    <!-- Project 3 -->
+    <li class="other-project-item">
+      <a href="Engkanto Siklaban Para sa Dugo ni Bathala.html" class="other-project-card">
+
+        <figure class="other-project-img">
+          <div class="other-project-icon-box">
+            <ion-icon name="eye-outline"></ion-icon>
+          </div>
+
+          <img
+            src="./assets/images/enghome.png"
+            alt="Fighting Game Representing Filipino Folklore"
+            loading="lazy">
+        </figure>
+
+        <div class="other-project-content">
+
+          <h4 class="h4 other-project-title">
+           Fighting Game Represent Filipino Folklore 
+          </h4>
+
+          <p class="other-project-category">
+            Game Development
+          </p>
+
+        </div>
+
+      </a>
+    </li>
+
+  </ul>
+
+</section>
+        
+     
+     
+        <!--
+          - testimonials modal
+    -->
+      
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+            <!--Apostrophe   <img src="./assets/images/icon-quote.svg" alt="quote icon"> -->
+            </div>
+       
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  
+                </p>
+              </div>
+            
+            </div>
+
+          </section>
+
+        </div>
+
+      
+      
+   
+
+      </article>
+
+  
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="# ">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+ 
+        </section>
+       
+      </article>
+
+
+    </main>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <script src="./assets/js/script.js"></script>
+
+
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
